@@ -1,0 +1,31 @@
+
+  <div style="width: 50%; margin: auto; background-color: white">
+    <h1 style="text-align: center; color: black">Access Wallet with Keystore File</h1>
+    <div style="width: 100%; height: 91px"></div>
+    <div style="text-align: center;">
+        <div style="display: inline"><button style="border: 0px; border-radius: 50%; background-color: #949494; width: 30px; height: 30px">1</button><hr style="display:inline-block;" width="80%"/></div>
+        <div style="display: inline"><button style="border: 0px;border-radius: 50%; background-color: #004d9f; width:30px; height: 30px">2</button></div>
+    </div>
+    <div width="100%" height="30px"></div>
+    <h3 style="color: #949494;">Step 1.</h3>
+    <h1>Enter Password</h1>
+    <div>Enter your password to unlock your wallet.</div>
+    <div>{{error}}</div>
+    <form id="formSm" action="/wallet/access/software/post" method="POST">
+        <input type="password" size="100%" name="password">
+        <input id="nameFile" name="nameFile" hidden value={{nameFile}}>
+        <div style="width: 100%; text-align:center; margin-top: 30px">
+            <button type="button" onclick="location.href='/wallet/access/software/keystore'" style="width: 30%; height: 40px;border: 1px solid #52e193; border-radius: 5px; cursor: pointer">Back</button>
+            <button type="submit" style="width: 40%; height: 40px;background-color: #52e193; border: 0px; border-radius: 5px; cursor: pointer"> Access </button>
+        </div>
+    </form>
+    </button style="margin-top: 30px">
+    <div style="width: 100%;height:20px;"></div>
+    <button style="width: 90%; margin-left: 5%; height:160px; border-radius: 15px; background-color: yellow; border: 0px">
+    <div style="text-align: left; color: black; font-size: 24px">NOT RECOMMEND</div>
+    <div style="width: 100%; height: 20px"></div>
+    <div style="text-align: left; color: black; font-size: 18px">
+    This information is sensitive, and these options should only be used in offline settings by experienced crypto users.
+    </div>
+    </button>
+  </div>

@@ -1,0 +1,35 @@
+<div style="display: flex; flex: auto">
+    <div style="width: 50%; text-align:center">
+        <table style="border: 1px solid black; width:90%">
+        List blocks
+            <tr>
+                <th>id</th>
+                <th>balance</th>
+            </tr>
+            {{#each users}}
+            <tr>
+                <th>{{username}}</th>
+                <th>{{balance}}</th>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    <div style="width: 50%; text-align:center">
+        <table style="border: 1px solid black; width:90%">
+        List Transactions
+            <tr>
+                <th></th>
+                <th>amount</th>
+            </tr>
+            {{#each history}}
+            <tr>
+                <th>from: {{from}} <br> to: {{to}}</th>
+                <th>{{amount}}</th>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    <div>
+
+    </div>
+</div>

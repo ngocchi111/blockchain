@@ -1,0 +1,58 @@
+<div style="display: flex; fle">
+    <div style="width: 20%; background-color: #003784; text-align: center">
+        <button style="width: 90%; height: 100px; margin: auto; background-image: url('https://mewcard.mewapi.io/?address=0xe2B7a0c7bC21E000B8327713513b9D4d2620A414'); text-align: left">
+            <h1>${{balance}}</h1>
+        </button>
+    
+        <div>
+            <button onclick="location.href='/wallet/send'" >sent</button>
+        </div>
+        <div style="text-align: center">
+        <div style="width: 100%; color: white; margin-top: 30px">Dashboard</div>
+        <div style="width: 100%; color: white; margin-top: 30px">NFT Manager</div>
+        <div style="width: 100%; color: white; margin-top: 30px">DApps</div>
+        <hr>
+        <div style="width: 100%; color: white; margin-top: 30px">Setting</div>
+        <div onclick="location.href='/wallet/logout'" style="width: 100%; color: white; margin-top: 30px">Logout</div>
+        <div style="width: 100%; color: white; margin-top: 30px">Data tracking Off</div>
+        </div>
+
+    </div>
+    <div style="width: 55%; background-color: #c1c1c1; text-align: center">
+        <div style="width: 90%; background-color: white; height: 300px; border-radius: 5px; text-align: left">
+            <h2>My ETH balance is empty</h2>
+            <button style="width: 40%; height: 40px; background-color: #41dcc0;color: width; border-radius: 5px; border: 0px; cursor: pointer">Buy ETH with a credit card </button>
+            <div>We accept credit card</div>
+            <div style="margin-top: 100px">Tip: You can also send your ETH from another wallet!</div>
+        </div>
+
+        <div style="width: 90%; background-color: white; height: 300px; border-radius: 5px; text-align: left">
+            <h2>MY TOKENS VALUE</h2>
+            <h2>${{balance}}</h2>
+           <table>
+            <tr>
+                <th style="width: 200px;">Token</th>
+                <th style="width: 200px">Price</th>
+                <th style="width: 200px">Market</th>
+                <th style="width: 200px">24h</th>
+                <th style="width: 200px;">Balance</th>
+                <th style="width: 200px;"></th>
+            </tr>
+            <tr>
+                <th style="width: 200px;">ETH</th>
+                <th style="width: 200px">$2,932.64</th>
+                <th style="width: 200px">353.8394B</th>
+                <th style="width: 200px">2.33%</th>
+                <th style="width: 200px;">{{balance}}</th>
+            </tr>
+            </table>
+        </div>
+    </div>
+    <div style="width: 30%; background-color: #c1c1c1; text-align: center">
+        <div style="width: 90%; background-color: white; height: 300px; border-radius: 5px; text-align: left">
+            <h2>Network</h2>
+            <div>ETH - Ethereum</div>
+            <div style="margin-top: 30px">Last Block: 14,716,972</div>
+        </div>
+    </div>
+</div>
